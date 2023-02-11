@@ -181,7 +181,7 @@ textarea{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 680px){
     .main-login{
         flex-direction: column;
     }
