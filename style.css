@@ -147,6 +147,40 @@ textarea{
     }
 }
 
+@media only screen and (width: 768px){
+    .main-login{
+        display: flex;
+        height: 100%;
+    }
+
+    .left-login>h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 50%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 50%;
+        height: auto;
+    }
+
+    .list{
+        width: 50vw;
+        height: 100vh;
+}
+
+    .card{
+        height: 100vh;
+    }
+    .card > h1{
+        font-size: 20px;
+    }
+}
+
+
 @media only screen and (max-width: 600px){
     .main-login{
         flex-direction: column;
@@ -161,12 +195,21 @@ textarea{
         height: auto;
     }
 
+    .list{
+    display: none;
+}   
+
     .right-login{
         width: 100%;
         height: auto;
     }
 
-    .list{
-        width: 50vh;
-}
+    .card{
+        width: 80vw;
+        height: 100vh;
+    }
+
+    .card > h1{
+        font-size: 18px;
+    }
 }
