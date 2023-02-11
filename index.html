@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora - IMC</title>
+</head>
+<body>
+      <main>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Instruções de uso:</h1>
+            <ol class="list">
+                <li>
+                    Insira seu nome
+                </li>
+                <li>
+                    Digite sua altura
+                </li>
+                <li>
+                    Digite seu peso
+                </li>
+                <li>
+                    Aperte em "Calcular"
+                </li>
+                <img src="Gym-amico.svg" alt="" class="img-list">
+            </ol>
+            
+        </div>
+
+        <div class="right-login">
+
+            <div class="card">
+                <h1>Calculadora - IMC</h1>
+                <div class="textfield">
+                    <label for="username">Nome:</label>
+                    <input type="text" name="username" id="username" placeholder="Digite seu nome..." required>
+                </div>
+
+                <div class="textfield">
+                    <label for="useraltura">Altura:</label>
+                    <input type="number" name="useraltura" id="useraltura" placeholder="Digite sua altura..." required>
+                </div>
+
+                <div class="textfield">
+                    <label for="userpaso">Peso:</label>
+                    <input type="number" name="userpaso" id="userpaso" placeholder="Digite seu peso..." required>
+                </div>
+
+                
+                    <button onclick="calculate()">Calcular</button>
+                    <textarea name="" id="text_area" cols="10" rows="8"></textarea>
+                
+
+                
+    </main>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
