@@ -12,7 +12,7 @@ body *{
 
 .main-login{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: #201b2c;
     display: flex;
     justify-content: center;
@@ -32,6 +32,11 @@ body *{
     text-align: center;
     font-size: 5vh;
     color: #00ff88;
+}
+
+.left-login > i{
+    color: #00ff88;
+    display: none;
 }
 
 .list{
@@ -77,6 +82,10 @@ body *{
     color: #00ff88;
     font-weight: 800;
     
+}
+
+.card > h1 > i{
+    display: none;
 }
 
 .textfield{
@@ -128,6 +137,7 @@ button{
 
 textarea{
     border: none;
+    outline: none;
     display: flex;
     background:#2f2841;
     color: #fff;
@@ -141,52 +151,18 @@ textarea{
     user-select: none;
 }
 
-@media only screen and (max-width: 950px){
+@media (max-width: 950px){
     .card{
         width: 85%;
     }
 }
 
-@media only screen and (width: 768px){
-    .main-login{
-        display: flex;
-        height: 100%;
-    }
-
-    .left-login>h1{
-        display: none;
-    }
-
-    .left-login{
-        width: 50%;
-        height: auto;
-    }
-
-    .right-login{
-        width: 50%;
-        height: auto;
-    }
-
-    .list{
-        width: 50vw;
-        height: 100vh;
-}
-
-    .card{
-        height: 100vh;
-    }
-    .card > h1{
-        font-size: 20px;
-    }
-}
-
-
-@media only screen and (max-width: 680px){
+@media only screen and (max-width:600px){
     .main-login{
         flex-direction: column;
     }
 
-    .left-login>h1{
+    .left-login .list img{
         display: none;
     }
 
@@ -194,22 +170,10 @@ textarea{
         width: 100%;
         height: auto;
     }
-
-    .list{
-    display: none;
-}   
-
     .right-login{
         width: 100%;
         height: auto;
-    }
-
-    .card{
-        width: 80vw;
-        height: 90vh;
-    }
-
-    .card > h1{
-        font-size: 18px;
+        margin-top: 10px;
     }
 }
+
