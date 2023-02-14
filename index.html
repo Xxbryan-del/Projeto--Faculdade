@@ -8,16 +8,18 @@
     <title>Calculadora - IMC</title>
 </head>
 <body>
-      <main>
-    <div class="main-login">
-        <div class="left-login">
+    <main>
+    <div class="main-login"> <!--Div que engloba todos os elementos da página-->
+        <div class="left-login"> <!--Card a esquerda com as intruções de como usar -->
+
             <h1>Instruções de uso:</h1>
             <ol class="list">
+                
                 <li>
                     Insira seu nome
                 </li>
                 <li>
-                    Digite sua altura
+                    Digite sua altura (Ex: 1,70)
                 </li>
                 <li>
                     Digite seu peso
@@ -30,18 +32,18 @@
             
         </div>
 
-        <div class="right-login">
+        <div class="right-login"> <!--Card a direita que contém os inputs -->
 
             <div class="card">
-                <h1>Calculadora - IMC</h1>
+                <h1>Calculadora - IMC <i class="fa-sharp fa-solid fa-circle-exclamation" id="attencion" onclick="mostrar()"></i></h1>
                 <div class="textfield">
                     <label for="username">Nome:</label>
-                    <input type="text" name="username" id="username" placeholder="Digite seu nome..." required>
+                    <input type="text" name="username" id="username" placeholder="Digite seu nome..." required autofocus>
                 </div>
 
                 <div class="textfield">
-                    <label for="useraltura">Altura:</label>
-                    <input type="number" name="useraltura" id="useraltura" placeholder="Digite sua altura..." required>
+                    <label for="useraltura">Altura(m):</label>
+                    <input type="number" name="useraltura" id="useraltura" placeholder="Digite sua altura: Ex: 1,70" required>
                 </div>
 
                 <div class="textfield">
@@ -49,17 +51,11 @@
                     <input type="number" name="userpaso" id="userpaso" placeholder="Digite seu peso..." required>
                 </div>
 
-                
-                    <button onclick="calculate()">Calcular</button>
-                    <textarea name="" id="text_area" cols="10" rows="8"></textarea>
-                
-
-                
+                <button onclick="calculate()">Calcular</button> <!--Bootão com a função de calcular-->
+                <textarea name="" id="text_area" cols="10" rows="8"></textarea>   
+             </div>   
+         </div>     
     </main>
-
-        </div>
-    </div>
-    <script src="script.js"></script>
-
+    <script src="script.js"></script> <!--Link do script-->
 </body>
 </html>
