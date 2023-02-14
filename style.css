@@ -162,6 +162,10 @@ textarea{
         flex-direction: column;
     }
 
+    .left-login h1{
+        font-size: 1.5rem;
+    }
+
     .left-login .list img{
         display: none;
     }
@@ -174,6 +178,10 @@ textarea{
         width: 100%;
         height: auto;
         margin-top: 10px;
+    }
+
+    .card h1{
+        font-size: 1.5rem;
     }
 }
 
