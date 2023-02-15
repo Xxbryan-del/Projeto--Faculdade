@@ -161,7 +161,6 @@ textarea{
     .main-login{
         flex-direction: column;
         height: 100vh;
-        position: fixed;
     }
 
     .left-login h1{
